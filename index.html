@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descubre la verdad sobre Sola Scriptura. Un ebook que revela qué enseña realmente la Biblia sobre su propia autoridad. Basado en Biblia, Historia y Padres de la Iglesia.">
+    <meta name="keywords" content="Sola Scriptura, Biblia, teología, historia de la iglesia, padres de la iglesia, apologética, fe cristiana">
+    <meta name="author" content="Solo La Biblia">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="¿SOLO LA BIBLIA? - La verdad sobre Sola Scriptura">
+    <meta property="og:description" content="Descubre la verdad sobre Sola Scriptura. Un ebook que revela qué enseña realmente la Biblia sobre su propia autoridad.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://solalabiblia.com">
+    <meta property="og:image" content="https://solalabiblia.com/og-image.jpg">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="¿SOLO LA BIBLIA? - La verdad sobre Sola Scriptura">
+    <meta name="twitter:description" content="Descubre la verdad sobre Sola Scriptura. Un ebook que revela qué enseña realmente la Biblia sobre su propia autoridad.">
+    
+    <title>¿SOLO LA BIBLIA? - La verdad sobre Sola Scriptura</title>
+    
+    <!-- Facebook Pixel -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1646156149348746');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=1646156149348746&ev=PageView&noscript=1"
+    /></noscript>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Book",
+        "name": "¿SOLO LA BIBLIA?",
+        "subtitle": "La verdad sobre Sola Scriptura",
+        "author": {
+            "@type": "Person",
+            "name": "Solo La Biblia"
+        },
+        "bookFormat": "https://schema.org/EBook",
+        "inLanguage": "es",
+        "offers": {
+            "@type": "Offer",
+            "price": "8.99",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock"
+        }
+    }
+    </script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            400: '#D4AF37',
+                            500: '#C5A028',
+                            600: '#B8941F',
+                            700: '#9A7B0A',
+                        },
+                        navy: {
+                            800: '#1a237e',
+                            900: '#0d1347',
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['Playfair Display', 'serif'],
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        * {
+            scroll-behavior: smooth;
+        }
+        
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .gold-gradient {
+            background: linear-gradient(135deg, #D4AF37 0%, #F4E4BA 50%, #D4AF37 100%);
+        }
+        
+        .navy-gradient {
+            background: linear-gradient(135deg, #0d1347 0%, #1a237e 100%);
+        }
+        
+        .hero-bg {
+            background: linear-gradient(135deg, rgba(13, 19, 71, 0.95) 0%, rgba(26, 35, 126, 0.9) 100%),
+                        url('https://images.unsplash.com/photo-1504052434569-70ad5836ab65?w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        
+        .ebook-shadow {
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5),
+                        0 0 60px rgba(212, 175, 55, 0.3);
+        }
+        
+        .card-hover {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+        
+        .btn-gold {
+            background: linear-gradient(135deg, #D4AF37 0%, #C5A028 100%);
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.4);
+        }
+        
+        .btn-gold:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(212, 175, 55, 0.6);
+            background: linear-gradient(135deg, #C5A028 0%, #B8941F 100%);
+        }
+        
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+        
+        .accordion-content.open {
+            max-height: 500px;
+        }
+        
+        .star-rating {
+            color: #D4AF37;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        .float-animation {
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        @keyframes shimmer {
+            0% { background-position: -200% center; }
+            100% { background-position: 200% center; }
+        }
+        
+        .shimmer {
+            background: linear-gradient(90deg, #D4AF37 0%, #F4E4BA 25%, #D4AF37 50%, #F4E4BA 75%, #D4AF37 100%);
+            background-size: 200% auto;
+            animation: shimmer 3s linear infinite;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans antialiased">
+    
+    <!-- HERO SECTION -->
+    <section class="hero-bg min-h-screen flex items-center justify-center py-20 px-4 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black/30"></div>
+        
+        <div class="max-w-6xl mx-auto text-center relative z-10">
+            <div class="fade-in">
+                <h1 class="text-4xl md:text-6xl lg:text-7xl font-serif font-bold text-white mb-6 leading-tight">
+                    ¿LA BIBLIA ENSEÑA REALMENTE<br>
+                    <span class="shimmer">"SOLO LA BIBLIA"?</span>
+                </h1>
+                
+                <p class="text-xl md:text-2xl text-gray-200 mb-8 max-w-3xl mx-auto font-light">
+                    Miles de cristianos han aceptado esta doctrina durante siglos... pero ¿realmente aparece en la Biblia?
+                </p>
+                
+                <!-- Ebook 3D Image -->
+                <div class="mb-10 float-animation">
+                    <div class="relative inline-block">
+                        <img src="imagenes/Portada.png" alt="Portada del ebook ¿SOLO LA BIBLIA?" class="w-64 md:w-80 lg:w-96 h-auto rounded-lg ebook-shadow mx-auto transform rotate-3 hover:rotate-0 transition-transform duration-500">
+                        <div class="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-48 h-4 bg-black/30 blur-xl rounded-full"></div>
+                    </div>
+                </div>
+                
+                <a href="https://pay.hotmart.com/H106805257S" target="_blank" class="btn-gold inline-block text-navy-900 font-bold text-lg md:text-xl px-10 py-4 rounded-full mb-10">
+                    ACCEDER AL EBOOK
+                </a>
+                
+                <!-- Trust Indicators -->
+                <div class="flex flex-wrap justify-center items-center gap-6 md:gap-10 text-white/90 text-sm md:text-base">
+                    <div class="flex items-center gap-2">
+                        <span class="star-rating text-lg">★★★★★</span>
+                        <span>Más de 200 lectores satisfechos</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <span>✓</span>
+                        <span>Basado en Biblia, Historia y Padres de la Iglesia</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <span>✓</span>
+                        <span>Acceso inmediato</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <span>✓</span>
+                        <span>Formato Ebook Digital</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <svg class="w-8 h-8 text-white/50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+            </svg>
+        </div>
+    </section>
+    
+    <!-- PROBLEM SECTION -->
+    <section class="py-20 md:py-32 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="fade-in">
+                <div class="grid md:grid-cols-2 gap-12 items-center mb-16">
+                    <div>
+                        <h2 class="text-3xl md:text-5xl font-serif font-bold text-navy-900 mb-6">
+                            ¿Alguna vez te hicieron una de estas preguntas?
+                        </h2>
+                    </div>
+                    <div class="order-first md:order-last">
+                        <img src="imagenes/foto1.png" alt="Persona leyendo la Biblia" class="w-full h-auto rounded-2xl shadow-xl">
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+                    <div class="card-hover bg-gray-50 rounded-2xl p-8 border-l-4 border-gold-400">
+                        <p class="text-xl md:text-2xl font-medium text-navy-900">¿Dónde dice la Biblia "Solo la Biblia"?</p>
+                    </div>
+                    <div class="card-hover bg-gray-50 rounded-2xl p-8 border-l-4 border-gold-400">
+                        <p class="text-xl md:text-2xl font-medium text-navy-900">¿Quién decidió cuáles libros forman la Biblia?</p>
+                    </div>
+                    <div class="card-hover bg-gray-50 rounded-2xl p-8 border-l-4 border-gold-400">
+                        <p class="text-xl md:text-2xl font-medium text-navy-900">¿Qué enseñaban realmente los primeros cristianos?</p>
+                    </div>
+                    <div class="card-hover bg-gray-50 rounded-2xl p-8 border-l-4 border-gold-400">
+                        <p class="text-xl md:text-2xl font-medium text-navy-900">¿La Tradición contradice la Biblia?</p>
+                    </div>
+                    <div class="card-hover bg-gray-50 rounded-2xl p-8 border-l-4 border-gold-400">
+                        <p class="text-xl md:text-2xl font-medium text-navy-900">¿Por qué existen miles de denominaciones cristianas?</p>
+                    </div>
+                    <div class="card-hover bg-gray-50 rounded-2xl p-8 border-l-4 border-gold-400">
+                        <p class="text-xl md:text-2xl font-medium text-navy-900">¿Tengo argumentos para defender mi fe?</p>
+                    </div>
+                </div>
+                
+                <div class="bg-navy-900 rounded-3xl p-10 md:p-16 text-center">
+                    <p class="text-xl md:text-2xl text-white font-light leading-relaxed max-w-4xl mx-auto">
+                        Si alguna vez dudaste al responder o sentiste que no tenías argumentos suficientes para defender tu fe, 
+                        <span class="text-gold-400 font-semibold">este ebook fue creado para ti.</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- WHAT YOU'LL DISCOVER SECTION -->
+    <section class="py-20 md:py-32 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="fade-in">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-5xl font-serif font-bold text-navy-900 mb-6">
+                        Lo que descubrirás en este ebook
+                    </h2>
+                    <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                        Un viaje profundo a través de la Biblia, la historia y los escritos de los primeros cristianos
+                    </p>
+                </div>
+                
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="card-hover bg-white rounded-2xl p-6 text-center shadow-lg">
+                        <div class="text-4xl mb-4">📜</div>
+                        <p class="text-lg font-medium text-navy-900">Qué dice realmente la Biblia sobre la autoridad</p>
+                    </div>
+                    <div class="card-hover bg-white rounded-2xl p-6 text-center shadow-lg">
+                        <div class="text-4xl mb-4">🏛️</div>
+                        <p class="text-lg font-medium text-navy-900">El verdadero origen de Sola Scriptura</p>
+                    </div>
+                    <div class="card-hover bg-white rounded-2xl p-6 text-center shadow-lg">
+                        <div class="text-4xl mb-4">📚</div>
+                        <p class="text-lg font-medium text-navy-900">Cómo se formó el canon bíblico</p>
+                    </div>
+                    <div class="card-hover bg-white rounded-2xl p-6 text-center shadow-lg">
+                        <div class="text-4xl mb-4">✝️</div>
+                        <p class="text-lg font-medium text-navy-900">Qué enseñaban los Padres de la Iglesia</p>
+                    </div>
+                    <div class="card-hover bg-white rounded-2xl p-6 text-center shadow-lg">
+                        <div class="text-4xl mb-4">⚖️</div>
+                        <p class="text-lg font-medium text-navy-900">La diferencia entre Escritura y Tradición</p>
+                    </div>
+                    <div class="card-hover bg-white rounded-2xl p-6 text-center shadow-lg">
+                        <div class="text-4xl mb-4">📖</div>
+                        <p class="text-lg font-medium text-navy-900">Evidencias históricas documentadas</p>
+                    </div>
+                    <div class="card-hover bg-white rounded-2xl p-6 text-center shadow-lg">
+                        <div class="text-4xl mb-4">💬</div>
+                        <p class="text-lg font-medium text-navy-900">Respuestas bíblicas a objeciones comunes</p>
+                    </div>
+                    <div class="card-hover bg-white rounded-2xl p-6 text-center shadow-lg">
+                        <div class="text-4xl mb-4">🎯</div>
+                        <p class="text-lg font-medium text-navy-900">Argumentos fáciles de recordar</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- WHY DIFFERENT SECTION -->
+    <section class="py-20 md:py-32 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="fade-in">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-5xl font-serif font-bold text-navy-900 mb-6">
+                        ¿Por qué este ebook es diferente?
+                    </h2>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Other Contents -->
+                    <div class="bg-red-50 rounded-3xl p-8 md:p-10">
+                        <h3 class="text-2xl font-bold text-red-800 mb-8 text-center">OTROS CONTENIDOS</h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-center gap-3 text-lg text-red-700">
+                                <span class="text-2xl">❌</span>
+                                Opiniones personales
+                            </li>
+                            <li class="flex items-center gap-3 text-lg text-red-700">
+                                <span class="text-2xl">❌</span>
+                                Debates interminables
+                            </li>
+                            <li class="flex items-center gap-3 text-lg text-red-700">
+                                <span class="text-2xl">❌</span>
+                                Videos desordenados
+                            </li>
+                            <li class="flex items-center gap-3 text-lg text-red-700">
+                                <span class="text-2xl">❌</span>
+                                Información incompleta
+                            </li>
+                            <li class="flex items-center gap-3 text-lg text-red-700">
+                                <span class="text-2xl">❌</span>
+                                Sin referencias históricas
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- This Ebook -->
+                    <div class="bg-green-50 rounded-3xl p-8 md:p-10">
+                        <h3 class="text-2xl font-bold text-green-800 mb-8 text-center">ESTE EBOOK</h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-center gap-3 text-lg text-green-700">
+                                <span class="text-2xl">✔</span>
+                                Biblia
+                            </li>
+                            <li class="flex items-center gap-3 text-lg text-green-700">
+                                <span class="text-2xl">✔</span>
+                                Historia
+                            </li>
+                            <li class="flex items-center gap-3 text-lg text-green-700">
+                                <span class="text-2xl">✔</span>
+                                Padres de la Iglesia
+                            </li>
+                            <li class="flex items-center gap-3 text-lg text-green-700">
+                                <span class="text-2xl">✔</span>
+                                Explicaciones sencillas
+                            </li>
+                            <li class="flex items-center gap-3 text-lg text-green-700">
+                                <span class="text-2xl">✔</span>
+                                Referencias documentadas
+                            </li>
+                            <li class="flex items-center gap-3 text-lg text-green-700">
+                                <span class="text-2xl">✔</span>
+                                Investigación organizada
+                            </li>
+                            <li class="flex items-center gap-3 text-lg text-green-700">
+                                <span class="text-2xl">✔</span>
+                                Fácil de leer
+                            </li>
+                            <li class="flex items-center gap-3 text-lg text-green-700">
+                                <span class="text-2xl">✔</span>
+                                Diseñado para aprender rápidamente
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- TESTIMONIALS SECTION -->
+    <section class="py-20 md:py-32 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="fade-in">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-5xl font-serif font-bold text-navy-900 mb-6">
+                        Lo que dicen nuestros lectores
+                    </h2>
+                    <div class="flex justify-center items-center gap-2 mb-4">
+                        <span class="star-rating text-3xl">★★★★★</span>
+                    </div>
+                    <p class="text-xl text-gray-600">Más de 200 lectores satisfechos</p>
+                </div>
+                
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="card-hover bg-gray-50 rounded-2xl p-8 shadow-lg">
+                        <div class="star-rating text-xl mb-4">★★★★★</div>
+                        <p class="text-gray-700 mb-6 italic">"Nunca había entendido de dónde salió realmente la doctrina de Sola Scriptura. Este ebook cambió completamente mi perspectiva."</p>
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-full bg-navy-200 flex items-center justify-center text-navy-800 font-bold">CM</div>
+                            <div>
+                                <p class="font-semibold text-navy-900">Carlos M.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card-hover bg-gray-50 rounded-2xl p-8 shadow-lg">
+                        <div class="star-rating text-xl mb-4">★★★★★</div>
+                        <p class="text-gray-700 mb-6 italic">"Todo está explicado con Biblia e historia. Muy fácil de comprender."</p>
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-full bg-navy-200 flex items-center justify-center text-navy-800 font-bold">MG</div>
+                            <div>
+                                <p class="font-semibold text-navy-900">María G.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card-hover bg-gray-50 rounded-2xl p-8 shadow-lg">
+                        <div class="star-rating text-xl mb-4">★★★★★</div>
+                        <p class="text-gray-700 mb-6 italic">"Ahora puedo responder con seguridad cuando me hacen preguntas sobre mi fe."</p>
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-full bg-navy-200 flex items-center justify-center text-navy-800 font-bold">LA</div>
+                            <div>
+                                <p class="font-semibold text-navy-900">Luis A.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card-hover bg-gray-50 rounded-2xl p-8 shadow-lg">
+                        <div class="star-rating text-xl mb-4">★★★★★</div>
+                        <p class="text-gray-700 mb-6 italic">"Lo terminé en dos días. Vale muchísimo más de lo que cuesta."</p>
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-full bg-navy-200 flex items-center justify-center text-navy-800 font-bold">AP</div>
+                            <div>
+                                <p class="font-semibold text-navy-900">Andrea P.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card-hover bg-gray-50 rounded-2xl p-8 shadow-lg">
+                        <div class="star-rating text-xl mb-4">★★★★★</div>
+                        <p class="text-gray-700 mb-6 italic">"Uno de los mejores ebooks católicos que he comprado."</p>
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-full bg-navy-200 flex items-center justify-center text-navy-800 font-bold">JR</div>
+                            <div>
+                                <p class="font-semibold text-navy-900">José R.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card-hover bg-gold-50 rounded-2xl p-8 shadow-lg border-2 border-gold-400">
+                        <div class="text-center">
+                            <p class="text-gold-600 font-semibold mb-2">¿Quieres ser el próximo?</p>
+                            <a href="https://pay.hotmart.com/H106805257S" target="_blank" class="btn-gold inline-block text-navy-900 font-bold px-6 py-3 rounded-full text-sm">
+                                ACCEDER AHORA
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- BENEFITS SECTION -->
+    <section class="py-20 md:py-32 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="fade-in">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-5xl font-serif font-bold text-navy-900 mb-6">
+                        Beneficios exclusivos
+                    </h2>
+                </div>
+                
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                    <div class="bg-white rounded-2xl p-6 text-center shadow-md card-hover">
+                        <div class="text-3xl mb-3">📖</div>
+                        <p class="font-medium text-navy-900">Lectura sencilla</p>
+                    </div>
+                    <div class="bg-white rounded-2xl p-6 text-center shadow-md card-hover">
+                        <div class="text-3xl mb-3">💬</div>
+                        <p class="font-medium text-navy-900">Lenguaje claro</p>
+                    </div>
+                    <div class="bg-white rounded-2xl p-6 text-center shadow-md card-hover">
+                        <div class="text-3xl mb-3">📊</div>
+                        <p class="font-medium text-navy-900">Basado en evidencia</p>
+                    </div>
+                    <div class="bg-white rounded-2xl p-6 text-center shadow-md card-hover">
+                        <div class="text-3xl mb-3">⚡</div>
+                        <p class="font-medium text-navy-900">Acceso inmediato</p>
+                    </div>
+                    <div class="bg-white rounded-2xl p-6 text-center shadow-md card-hover">
+                        <div class="text-3xl mb-3">📱</div>
+                        <p class="font-medium text-navy-900">Compatible con celular</p>
+                    </div>
+                    <div class="bg-white rounded-2xl p-6 text-center shadow-md card-hover">
+                        <div class="text-3xl mb-3">📲</div>
+                        <p class="font-medium text-navy-900">Compatible con tablet</p>
+                    </div>
+                    <div class="bg-white rounded-2xl p-6 text-center shadow-md card-hover">
+                        <div class="text-3xl mb-3">💻</div>
+                        <p class="font-medium text-navy-900">Compatible con computadora</p>
+                    </div>
+                    <div class="bg-white rounded-2xl p-6 text-center shadow-md card-hover">
+                        <div class="text-3xl mb-3">⬇️</div>
+                        <p class="font-medium text-navy-900">Acceso inmediato</p>
+                    </div>
+                    <div class="bg-white rounded-2xl p-6 text-center shadow-md card-hover col-span-2 md:col-span-1">
+                        <div class="text-3xl mb-3">🕐</div>
+                        <p class="font-medium text-navy-900">Disponible las 24 horas</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- GUARANTEE SECTION -->
+    <section class="py-20 md:py-32 bg-white">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="fade-in">
+                <div class="bg-gradient-to-br from-navy-800 to-navy-900 rounded-3xl p-10 md:p-16 text-center relative overflow-hidden">
+                    <div class="absolute top-0 left-0 w-full h-full opacity-10">
+                        <div class="absolute top-10 left-10 w-32 h-32 border-4 border-gold-400 rounded-full"></div>
+                        <div class="absolute bottom-10 right-10 w-24 h-24 border-4 border-gold-400 rounded-full"></div>
+                    </div>
+                    
+                    <div class="relative z-10">
+                        <div class="w-24 h-24 mx-auto mb-8 bg-gold-400 rounded-full flex items-center justify-center">
+                            <span class="text-5xl">🛡️</span>
+                        </div>
+                        
+                        <h3 class="text-2xl md:text-3xl font-serif font-bold text-white mb-6">
+                            Tu compra está protegida
+                        </h3>
+                        
+                        <p class="text-lg text-gray-200 leading-relaxed max-w-2xl mx-auto">
+                            Tu compra está protegida por la garantía ofrecida por Hotmart. Si el contenido no cumple tus expectativas, 
+                            podrás solicitar el reembolso conforme a las políticas vigentes de la plataforma.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- FAQ SECTION -->
+    <section class="py-20 md:py-32 bg-gray-50">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="fade-in">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-5xl font-serif font-bold text-navy-900 mb-6">
+                        Preguntas Frecuentes
+                    </h2>
+                </div>
+                
+                <div class="space-y-4">
+                    <div class="bg-white rounded-2xl shadow-md overflow-hidden">
+                        <button class="accordion-btn w-full px-6 py-5 text-left flex justify-between items-center hover:bg-gray-50 transition-colors">
+                            <span class="font-semibold text-navy-900 text-lg">¿Es un libro físico?</span>
+                            <svg class="accordion-icon w-6 h-6 text-gold-500 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="accordion-content">
+                            <div class="px-6 pb-5 text-gray-600">
+                                No, es un ebook en formato digital que puedes acceder inmediatamente después de tu compra.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white rounded-2xl shadow-md overflow-hidden">
+                        <button class="accordion-btn w-full px-6 py-5 text-left flex justify-between items-center hover:bg-gray-50 transition-colors">
+                            <span class="font-semibold text-navy-900 text-lg">¿Cuándo recibo el ebook?</span>
+                            <svg class="accordion-icon w-6 h-6 text-gold-500 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="accordion-content">
+                            <div class="px-6 pb-5 text-gray-600">
+                                Inmediatamente después de completar tu compra, recibirás un correo con el enlace de acceso.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white rounded-2xl shadow-md overflow-hidden">
+                        <button class="accordion-btn w-full px-6 py-5 text-left flex justify-between items-center hover:bg-gray-50 transition-colors">
+                            <span class="font-semibold text-navy-900 text-lg">¿Cómo accedo después de comprar?</span>
+                            <svg class="accordion-icon w-6 h-6 text-gold-500 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="accordion-content">
+                            <div class="px-6 pb-5 text-gray-600">
+                                Accederás a través de la plataforma de Hotmart con tu email y contraseña. También podrás acceder al archivo.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white rounded-2xl shadow-md overflow-hidden">
+                        <button class="accordion-btn w-full px-6 py-5 text-left flex justify-between items-center hover:bg-gray-50 transition-colors">
+                            <span class="font-semibold text-navy-900 text-lg">¿Puedo leerlo desde mi celular?</span>
+                            <svg class="accordion-icon w-6 h-6 text-gold-500 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="accordion-content">
+                            <div class="px-6 pb-5 text-gray-600">
+                                Sí, el ebook es compatible con celulares, tablets y computadoras. Puedes leerlo en cualquier dispositivo.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white rounded-2xl shadow-md overflow-hidden">
+                        <button class="accordion-btn w-full px-6 py-5 text-left flex justify-between items-center hover:bg-gray-50 transition-colors">
+                            <span class="font-semibold text-navy-900 text-lg">¿Está en PDF?</span>
+                            <svg class="accordion-icon w-6 h-6 text-gold-500 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="accordion-content">
+                            <div class="px-6 pb-5 text-gray-600">
+                                Sí, el formato es PDF, lo que garantiza que puedas leerlo en cualquier dispositivo con un lector de PDF.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white rounded-2xl shadow-md overflow-hidden">
+                        <button class="accordion-btn w-full px-6 py-5 text-left flex justify-between items-center hover:bg-gray-50 transition-colors">
+                            <span class="font-semibold text-navy-900 text-lg">¿Necesito conocimientos previos?</span>
+                            <svg class="accordion-icon w-6 h-6 text-gold-500 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="accordion-content">
+                            <div class="px-6 pb-5 text-gray-600">
+                                No, necesitas. El ebook está escrito en un lenguaje claro y accesible para cualquier persona interesada en el tema.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white rounded-2xl shadow-md overflow-hidden">
+                        <button class="accordion-btn w-full px-6 py-5 text-left flex justify-between items-center hover:bg-gray-50 transition-colors">
+                            <span class="font-semibold text-navy-900 text-lg">¿Incluye referencias bíblicas?</span>
+                            <svg class="accordion-icon w-6 h-6 text-gold-500 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="accordion-content">
+                            <div class="px-6 pb-5 text-gray-600">
+                                Sí, todas las afirmaciones están respaldadas con referencias bíblicas precisas y citas de los Padres de la Iglesia.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white rounded-2xl shadow-md overflow-hidden">
+                        <button class="accordion-btn w-full px-6 py-5 text-left flex justify-between items-center hover:bg-gray-50 transition-colors">
+                            <span class="font-semibold text-navy-900 text-lg">¿Cuántas páginas tiene?</span>
+                            <svg class="accordion-icon w-6 h-6 text-gold-500 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="accordion-content">
+                            <div class="px-6 pb-5 text-gray-600">
+                                El ebook tiene aproximadamente 80 páginas de contenido denso y bien estructurado.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white rounded-2xl shadow-md overflow-hidden">
+                        <button class="accordion-btn w-full px-6 py-5 text-left flex justify-between items-center hover:bg-gray-50 transition-colors">
+                            <span class="font-semibold text-navy-900 text-lg">¿Incluye evidencia histórica?</span>
+                            <svg class="accordion-icon w-6 h-6 text-gold-500 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="accordion-content">
+                            <div class="px-6 pb-5 text-gray-600">
+                                Sí, incluye documentación histórica de los primeros siglos del cristianismo y citas de los Padres de la Iglesia.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white rounded-2xl shadow-md overflow-hidden">
+                        <button class="accordion-btn w-full px-6 py-5 text-left flex justify-between items-center hover:bg-gray-50 transition-colors">
+                            <span class="font-semibold text-navy-900 text-lg">¿El acceso es inmediato?</span>
+                            <svg class="accordion-icon w-6 h-6 text-gold-500 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="accordion-content">
+                            <div class="px-6 pb-5 text-gray-600">
+                                Sí, el acceso es inmediato. Una vez completado el pago, podrás acceder al ebook al instante.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- PRICING SECTION -->
+    <section id="pricing" class="py-20 md:py-32 navy-gradient">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="fade-in">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-5xl font-serif font-bold text-white mb-6">
+                        Hoy puedes acceder por solo
+                    </h2>
+                </div>
+                
+                <div class="bg-white rounded-3xl p-10 md:p-16 text-center shadow-2xl relative overflow-hidden">
+                    <div class="absolute top-0 left-0 w-full h-2 gold-gradient"></div>
+                    
+                    <!-- Ebook Image -->
+                    <div class="mb-10 float-animation">
+                        <div class="relative inline-block">
+                            <img src="imagenes/Portada.png" alt="Portada del ebook ¿SOLO LA BIBLIA?" class="w-56 md:w-72 h-auto rounded-lg ebook-shadow mx-auto">
+                        </div>
+                    </div>
+                    
+                    <!-- Price -->
+                    <div class="mb-8">
+                        <p class="text-gray-500 text-lg mb-2">Precio regular</p>
+                        <p class="text-5xl md:text-7xl font-bold text-navy-900 mb-2">$8.99</p>
+                        <p class="text-gray-500 text-xl">USD</p>
+                    </div>
+                    
+                    <!-- Features -->
+                    <div class="flex flex-wrap justify-center gap-4 mb-10 text-left max-w-md mx-auto">
+                        <div class="flex items-center gap-2 text-navy-900">
+                            <span class="text-green-500 text-xl">✔</span>
+                            <span>Pago único</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-navy-900">
+                            <span class="text-green-500 text-xl">✔</span>
+                            <span>Acceso inmediato</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-navy-900">
+                            <span class="text-green-500 text-xl">✔</span>
+                            <span>Acceso digital</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-navy-900">
+                            <span class="text-green-500 text-xl">✔</span>
+                            <span>Compatible con todos los dispositivos</span>
+                        </div>
+                    </div>
+                    
+                    <!-- CTA Button -->
+                    <a href="https://pay.hotmart.com/H106805257S" target="_blank" class="btn-gold inline-block text-navy-900 font-bold text-xl md:text-2xl px-12 py-5 rounded-full w-full md:w-auto">
+                        QUIERO MI EBOOK AHORA
+                    </a>
+                    
+                    <p class="mt-6 text-gray-500 text-sm">
+                        Compra segura a través de Hotmart
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- FOOTER -->
+    <footer class="bg-navy-900 py-12 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-8">
+                <div class="text-center md:text-left">
+                    <div class="flex items-center justify-center md:justify-start gap-2 mb-4">
+                        <span class="text-2xl">🔒</span>
+                        <span class="text-white font-medium">Compra protegida</span>
+                    </div>
+                </div>
+                <div class="text-center md:text-left">
+                    <div class="flex items-center justify-center md:justify-start gap-2 mb-4">
+                        <span class="text-2xl">💳</span>
+                        <span class="text-white font-medium">Pago seguro</span>
+                    </div>
+                </div>
+                <div class="text-center md:text-left">
+                    <div class="flex items-center justify-center md:justify-start gap-2 mb-4">
+                        <span class="text-2xl">⚡</span>
+                        <span class="text-white font-medium">Acceso inmediato</span>
+                    </div>
+                </div>
+                <div class="text-center md:text-left">
+                    <div class="flex items-center justify-center md:justify-start gap-2 mb-4">
+                        <span class="text-2xl">🎧</span>
+                        <span class="text-white font-medium">Soporte</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-navy-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-gray-400 text-sm text-center md:text-left">
+                    © 2026 ¿SOLO LA BIBLIA? - Todos los derechos reservados
+                </p>
+                <div class="flex gap-6 text-sm">
+                    <a href="#" class="text-gray-400 hover:text-gold-400 transition-colors">Política de privacidad</a>
+                    <a href="#" class="text-gray-400 hover:text-gold-400 transition-colors">Términos y condiciones</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- JavaScript -->
+    <script>
+        // Fade in animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+        
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+        
+        // Accordion functionality
+        document.querySelectorAll('.accordion-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+                const icon = button.querySelector('.accordion-icon');
+                
+                // Close all other accordions
+                document.querySelectorAll('.accordion-content').forEach(item => {
+                    if (item !== content) {
+                        item.classList.remove('open');
+                        item.previousElementSibling.querySelector('.accordion-icon').style.transform = 'rotate(0deg)';
+                    }
+                });
+                
+                // Toggle current accordion
+                content.classList.toggle('open');
+                icon.style.transform = content.classList.contains('open') ? 'rotate(180deg)' : 'rotate(0deg)';
+            });
+        });
+        
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+        
+        // Add parallax effect to hero
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const hero = document.querySelector('.hero-bg');
+            if (hero && scrolled < window.innerHeight) {
+                hero.style.backgroundPositionY = scrolled * 0.5 + 'px';
+            }
+        });
+        
+        // Detect Hotmart purchase completion and fire Facebook Purchase event
+        // This only fires when user returns from Hotmart with a successful purchase
+        window.addEventListener('load', function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            
+            // Hotmart typically sends these parameters after successful purchase
+            // Check for common Hotmart success parameters
+            const hotmartStatus = urlParams.get('status') || urlParams.get('hotmart_status') || urlParams.get('transaction_status');
+            const hotmartApproved = urlParams.get('approved') === 'true' || urlParams.get('purchase') === 'completed';
+            
+            // If purchase is confirmed, fire Facebook Purchase event
+            if (hotmartStatus === 'approved' || hotmartStatus === 'completed' || hotmartApproved) {
+                // Fire Facebook Purchase event
+                fbq('track', 'Purchase', {
+                    value: 8.99,
+                    currency: 'USD',
+                    content_name: '¿SOLO LA BIBLIA? - La verdad sobre Sola Scriptura',
+                    content_category: 'Ebook'
+                });
+                
+                console.log('Facebook Purchase event fired - Purchase completed');
+                
+                // Optional: Clean URL parameters
+                window.history.replaceState({}, document.title, window.location.pathname);
+            }
+        });
+        
+        // Track InitiateCheckout when user clicks on CTA buttons (but not Purchase)
+        document.querySelectorAll('a[href*="hotmart.com"]').forEach(button => {
+            button.addEventListener('click', function() {
+                // Fire InitiateCheckout event when user clicks to go to Hotmart
+                fbq('track', 'InitiateCheckout', {
+                    content_name: '¿SOLO LA BIBLIA? - La verdad sobre Sola Scriptura',
+                    content_category: 'Ebook',
+                    value: 8.99,
+                    currency: 'USD'
+                });
+                
+                console.log('Facebook InitiateCheckout event fired - User clicked CTA');
+            });
+        });
+    </script>
+</body>
+</html>
