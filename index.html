@@ -9,7 +9,7 @@
     <meta name="robots" content="index, follow">
     
     <!-- Open Graph -->
-    <meta property="og:title" content="¿SOLO LA BIBLIA? - La verdad sobre Sola Scriptura">
+    <meta property="og:title" content="RESPUESTAS CATOLICAS">
     <meta property="og:description" content="Descubre la verdad sobre Sola Scriptura. Un ebook que revela qué enseña realmente la Biblia sobre su propia autoridad.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://solalabiblia.com">
@@ -17,10 +17,10 @@
     
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="¿SOLO LA BIBLIA? - La verdad sobre Sola Scriptura">
+    <meta name="twitter:title" content="RESPUESTAS CATOLICAS">
     <meta name="twitter:description" content="Descubre la verdad sobre Sola Scriptura. Un ebook que revela qué enseña realmente la Biblia sobre su propia autoridad.">
     
-    <title>¿SOLO LA BIBLIA? - La verdad sobre Sola Scriptura</title>
+    <title>RESPUESTAS CATOLICAS</title>
     
     <!-- Facebook Pixel -->
     <script>
@@ -178,6 +178,100 @@
             color: #D4AF37;
         }
         
+        .social-proof-notification {
+            position: fixed;
+            background: linear-gradient(135deg, #ff9800 0%, #f57c00 100%);
+            border-radius: 12px;
+            padding: 16px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            z-index: 9999;
+            max-width: 320px;
+            animation: slideIn 0.5s ease-out;
+            border-left: 4px solid #fff;
+            right: 20px;
+            bottom: 20px;
+        }
+        
+        .social-proof-notification.hiding {
+            animation: slideOut 0.5s ease-in forwards;
+        }
+        
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(100%);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        @keyframes slideOut {
+            from {
+                opacity: 1;
+                transform: translateX(0);
+            }
+            to {
+                opacity: 0;
+                transform: translateX(100%);
+            }
+        }
+        
+        .notification-avatar {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            flex-shrink: 0;
+        }
+        
+        .notification-content {
+            flex: 1;
+            min-width: 0;
+        }
+        
+        .notification-name {
+            font-weight: 600;
+            color: #ffffff;
+            font-size: 14px;
+            line-height: 1.2;
+        }
+        
+        .notification-location {
+            color: #fff3e0;
+            font-size: 12px;
+            margin-top: 2px;
+        }
+        
+        .notification-time {
+            color: #ffffff;
+            font-size: 11px;
+            font-weight: 500;
+            margin-top: 2px;
+        }
+        
+        .notification-close {
+            cursor: pointer;
+            color: #ffffff;
+            font-size: 18px;
+            padding: 4px;
+            flex-shrink: 0;
+        }
+        
+        .notification-close:hover {
+            color: #fff3e0;
+        }
+        
         @keyframes float {
             0%, 100% { transform: translateY(0); }
             50% { transform: translateY(-10px); }
@@ -210,10 +304,42 @@
         
         <div class="max-w-6xl mx-auto text-center relative z-10">
             <div class="fade-in">
-                <h1 class="text-4xl md:text-6xl lg:text-7xl font-serif font-bold text-white mb-6 leading-tight">
-                    ¿LA BIBLIA ENSEÑA REALMENTE<br>
-                    <span class="shimmer">"SOLO LA BIBLIA"?</span>
+                <!-- Countdown Timer -->
+                <div class="mb-8">
+                    <div class="inline-block bg-navy-800/80 backdrop-blur-sm rounded-2xl px-8 py-6 border-2 border-gold-400">
+                        <div class="bg-red-600/90 backdrop-blur-sm rounded-full px-6 py-2 mb-4 inline-block">
+                            <p class="text-white font-bold text-sm md:text-base flex items-center justify-center gap-2">
+                                <span class="animate-pulse">🔥</span>
+                                <span>¡PROMOCIÓN POR TERMINAR!</span>
+                                <span class="animate-pulse">🔥</span>
+                            </p>
+                        </div>
+                        <p class="text-gold-400 font-semibold text-sm mb-3 text-center">OFERTA EXPIRA EN:</p>
+                        <div class="flex gap-4 md:gap-6 justify-center" id="countdown">
+                            <div class="bg-white rounded-lg p-4 md:p-6 min-w-[80px] md:min-w-[100px]">
+                                <div class="text-3xl md:text-5xl font-bold text-navy-900" id="hours">23</div>
+                                <div class="text-xs text-gray-600">HORAS</div>
+                            </div>
+                            <div class="bg-white rounded-lg p-4 md:p-6 min-w-[80px] md:min-w-[100px]">
+                                <div class="text-3xl md:text-5xl font-bold text-navy-900" id="minutes">59</div>
+                                <div class="text-xs text-gray-600">MIN</div>
+                            </div>
+                            <div class="bg-white rounded-lg p-4 md:p-6 min-w-[80px] md:min-w-[100px]">
+                                <div class="text-3xl md:text-5xl font-bold text-navy-900" id="seconds">59</div>
+                                <div class="text-xs text-gray-600">SEG</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <h1 class="text-4xl md:text-6xl lg:text-7xl font-serif font-bold text-white mb-4 leading-tight">
+                    <span class="shimmer">RESPUESTAS CATOLICAS</span>
                 </h1>
+                
+                <h2 class="text-2xl md:text-4xl lg:text-5xl font-serif font-bold text-white mb-6 leading-tight">
+                    ¿LA BIBLIA ENSEÑA REALMENTE<br>
+                    <span class="text-gold-400">"SOLO LA BIBLIA"?</span>
+                </h2>
                 
                 <p class="text-xl md:text-2xl text-gray-200 mb-8 max-w-3xl mx-auto font-light">
                     Miles de cristianos han aceptado esta doctrina durante siglos... pero ¿realmente aparece en la Biblia?
@@ -227,7 +353,7 @@
                     </div>
                 </div>
                 
-                <a href="#bonos" class="btn-hero-cta btn-gold inline-block text-navy-900 font-bold text-lg md:text-xl px-10 py-4 rounded-full mb-10">
+                <a href="#bonos" class="btn-hero-cta btn-green inline-block text-white font-bold text-lg md:text-xl px-10 py-4 rounded-full mb-10">
                     QUIERO EL EBOOK
                 </a>
                 
@@ -929,6 +1055,162 @@
     
     <!-- JavaScript -->
     <script>
+        // Countdown Timer - 24 hours
+        function startCountdown() {
+            // Set countdown to 24 hours from now (or restore from localStorage)
+            let endTime = localStorage.getItem('countdownEndTime');
+            
+            if (!endTime) {
+                // If no stored time, set to 24 hours from now
+                endTime = new Date().getTime() + (24 * 60 * 60 * 1000);
+                localStorage.setItem('countdownEndTime', endTime);
+            }
+            
+            const now = new Date().getTime();
+            const distance = endTime - now;
+            
+            // If countdown is over, reset to 24 hours
+            if (distance < 0) {
+                endTime = new Date().getTime() + (24 * 60 * 60 * 1000);
+                localStorage.setItem('countdownEndTime', endTime);
+            }
+            
+            function updateTimer() {
+                const currentTime = new Date().getTime();
+                const timeLeft = endTime - currentTime;
+                
+                if (timeLeft < 0) {
+                    // Reset countdown when it reaches zero
+                    const newEndTime = new Date().getTime() + (24 * 60 * 60 * 1000);
+                    localStorage.setItem('countdownEndTime', newEndTime);
+                    return;
+                }
+                
+                const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+                
+                document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
+                document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
+                document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
+            }
+            
+            // Update immediately
+            updateTimer();
+            
+            // Update every second
+            setInterval(updateTimer, 1000);
+        }
+        
+        // Start countdown when page loads
+        startCountdown();
+        
+        // Social Proof Notifications
+        const buyers = [
+            { name: "María García", country: "México", time: "hace 2 minutos" },
+            { name: "Carlos Rodríguez", country: "España", time: "hace 5 minutos" },
+            { name: "Ana Martínez", country: "Argentina", time: "hace 8 minutos" },
+            { name: "Juan López", country: "Colombia", time: "hace 12 minutos" },
+            { name: "Laura Sánchez", country: "Chile", time: "hace 15 minutos" },
+            { name: "Pedro González", country: "Perú", time: "hace 18 minutos" },
+            { name: "Carmen Ruiz", country: "Venezuela", time: "hace 22 minutos" },
+            { name: "Miguel Torres", country: "Ecuador", time: "hace 25 minutos" },
+            { name: "Isabel Flores", country: "Bolivia", time: "hace 30 minutos" },
+            { name: "Ricardo Mendoza", country: "Paraguay", time: "hace 35 minutos" },
+            { name: "Patricia Castro", country: "Uruguay", time: "hace 40 minutos" },
+            { name: "Francisco Jiménez", country: "Costa Rica", time: "hace 45 minutos" },
+            { name: "Elena Vargas", country: "Panamá", time: "hace 50 minutos" },
+            { name: "Diego Herrera", country: "Guatemala", time: "hace 55 minutos" },
+            { name: "Sofía Ramírez", country: "El Salvador", time: "hace 1 hora" },
+            { name: "Andrés Molina", country: "Honduras", time: "hace 1 hora" },
+            { name: "Claudia Ortiz", country: "Nicaragua", time: "hace 1 hora" },
+            { name: "Javier Reyes", country: "República Dominicana", time: "hace 1 hora" },
+            { name: "Monica Cruz", country: "Cuba", time: "hace 2 horas" },
+            { name: "Alejandro Paredes", country: "Puerto Rico", time: "hace 2 horas" }
+        ];
+        
+        let usedBuyers = [];
+        let notificationQueue = [];
+        let isShowingNotification = false;
+        
+        function getRandomBuyer() {
+            const availableBuyers = buyers.filter(buyer => !usedBuyers.includes(buyer.name));
+            
+            if (availableBuyers.length === 0) {
+                // Reset if all buyers have been used
+                usedBuyers = [];
+                return buyers[Math.floor(Math.random() * buyers.length)];
+            }
+            
+            const randomBuyer = availableBuyers[Math.floor(Math.random() * availableBuyers.length)];
+            usedBuyers.push(randomBuyer.name);
+            return randomBuyer;
+        }
+        
+        function createNotification(buyer) {
+            // Remove existing notification if any
+            const existingNotification = document.querySelector('.social-proof-notification');
+            if (existingNotification) {
+                existingNotification.remove();
+            }
+            
+            const notification = document.createElement('div');
+            notification.className = 'social-proof-notification';
+            
+            const initials = buyer.name.split(' ').map(n => n[0]).join('').substring(0, 2);
+            
+            notification.innerHTML = `
+                <div class="notification-avatar">${initials}</div>
+                <div class="notification-content">
+                    <div class="notification-name">${buyer.name}</div>
+                    <div class="notification-location">de ${buyer.country}</div>
+                    <div class="notification-time">acaba de comprar el ebook</div>
+                </div>
+                <div class="notification-close">×</div>
+            `;
+            
+            // Add close button functionality
+            notification.querySelector('.notification-close').addEventListener('click', function() {
+                notification.remove();
+                isShowingNotification = false;
+            });
+            
+            document.body.appendChild(notification);
+            
+            console.log('Notification created and added to DOM');
+            
+            // Auto remove after 5 seconds
+            setTimeout(() => {
+                notification.classList.add('hiding');
+                setTimeout(() => {
+                    if (notification.parentElement) {
+                        notification.remove();
+                    }
+                    isShowingNotification = false;
+                }, 500);
+            }, 5000);
+            
+            isShowingNotification = false;
+        }
+        
+        function scheduleNextNotification() {
+            const delay = 40000; // Fixed 40 seconds delay
+            console.log('Next notification in:', Math.round(delay/1000), 'seconds');
+            setTimeout(() => {
+                if (!isShowingNotification) {
+                    isShowingNotification = true;
+                    const buyer = getRandomBuyer();
+                    console.log('Showing notification for:', buyer.name, 'from', buyer.country);
+                    createNotification(buyer);
+                }
+                scheduleNextNotification();
+            }, delay);
+        }
+        
+        // Start notifications immediately
+        console.log('Social proof notifications system started');
+        scheduleNextNotification();
+        
         // Fade in animation on scroll
         const observerOptions = {
             threshold: 0.1,
